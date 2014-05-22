@@ -12,51 +12,55 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-|-------------------|
-| tBodyAcc-XYZ      |
-| tGravityAcc-XYZ   |
-| tBodyAccJerk-XYZ  |
-| tBodyGyro-XYZ     |
-| tBodyGyroJerk-XYZ |
-| tBodyAccMag       |
-| tGravityAccMag    |
-| tBodyAccJerkMag   |
-| tBodyGyroMag      |
-| tBodyGyroJerkMag  |
-| fBodyAcc-XYZ      |
-| fBodyAccJerk-XYZ  |
-| fBodyGyro-XYZ     |
-| fBodyAccMag       |
-| fBodyAccJerkMag   |
-| fBodyGyroMag      |
-| fBodyGyroJerkMag  |
+<ul>
+<li>tBodyAcc-XYZ </li>
+<li>tGravityAcc-XYZ  </li>
+<li>tBodyAccJerk-XYZ </li>
+<li>tBodyGyro-XYZ    </li>
+<li>tBodyGyroJerk-XYZ</li>
+<li>tBodyAccMag     </li>
+<li>tGravityAccMag  </li>
+<li>tBodyAccJerkMag </li>
+<li>tBodyGyroMag    </li>
+<li>tBodyGyroJerkMag</li>
+<li>fBodyAcc-XYZ</li>
+<li>fBodyAccJerk-XYZ</li>
+<li>fBodyGyro-XYZ</li>
+<li>fBodyAccMag</li>
+<li>fBodyAccJerkMag</li>
+<li>fBodyGyroMag</li>
+<li>fBodyGyroJerkMag</li>
+</ul>
 
 The set of variables that were estimated and used from these signals are: 
 
-mean(): Mean value
+mean(): Mean value <br>
 std(): Standard deviation
 
-##Trasnformations
-*Train and test data were read and merged along with the activities.
-*Features pertaining to only mean and standard deviation of the measured variables were taken.
-*Feature names were renamed for better readability
-*Activity names were given English-like names
-*Subjects data were read for train and test data.
-*Data was melted using activity and subject as ID variables
-*Tidy data set was casted with activity and subject as ID variables and the mesared variables as the average of the mean and standard devation variabes of the signals measured.
+##Transformations
+* Train and test data were read and merged along with the activities.
+* Features pertaining to only mean and standard deviation of the measured variables were taken.
+* Feature names were renamed for better readability
+* Activity names were given English-like names
+* Subjects data were read for train and test data.
+* Data was melted using activity and subject as ID variables
+* Tidy data set was casted with activity and subject as ID variables and the mesared variables as the average of the mean and standard devation variabes of the signals measured.
 
 ##Variable Names As Present In Tidy Data Set
 Only variables pertaining to the mean and standard deviation of the primary variables measured as described above were taken. 
 
+
 In the second, independent tidy data set, that is, the output of the run_analysis.R produced a data set which was melted and casted using activity and subject as id variables and average was taken on the measured variables.
 
+
 The naming convention uses "." to seperate the measured parameter, the variable estimated (mean or sd), the co-ordinate axis(x,y or z)
+
 
 All variables are in lower case
 
 #List Of Variables
 
-| "names.tidydata."           |
+| "names in tidydataset"           |
 |-----------------------------|
 | "activity"                  |
 | "subject"                   |
