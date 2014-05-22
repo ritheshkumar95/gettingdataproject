@@ -26,6 +26,11 @@ Variables chosen for the project are those having the mean and standard deviatio
 
 ##Working Of The Script
 
-* run_analysis.R sources a function runanaylsis which sets the working directory to the UCI HAR dataset.
-* The script reads the training and test data, merges them and melts and casts with activity and subject as ID variables
+* run_analysis.R sources a function runanaylsis
+* The function sets working directory to train and test and reads the x train, y train, x test and y test data
+* Then these, data are merged and the required features are extracted
+* Activity and subject data are also read
+* Activity names are edited for easier reading
+* Variable names are changed using gsub functions to suit naming functions
+* The data is melted and casted with activity and subject as ID variables and the mean of the measure variables is taken
 * Codebook.md describes the variable names 
